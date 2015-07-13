@@ -1,6 +1,6 @@
 # Place inside /etc/logrotated.d/znc
 /home/znc-admin/.znc/moddata/log/*.log {
-    weekly
+    daily
     missingok
     notifempty
     copytruncate
