@@ -1,0 +1,12 @@
+#!/bin/bash
+# Rotate logs for ZNC IRC Bouncer
+# Used for CentOS7/RHEL6.5
+
+# File Location
+ZNC_HOME="/home/znc-admin/.znc/"
+
+# Remove logs older than 30 days
+0 23 * * * find $ZNC_HOME -type f -mtime +3 -name "*.log" -exec rm {} +
+
+# Zip logs older than 7 days
+0 23 * * * find . -name '*.log' -and -not -name '*.gz' -ctime +7 -exec gzip -v {} \;

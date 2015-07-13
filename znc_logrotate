@@ -1,0 +1,8 @@
+/home/znc-admin/.znc/moddata/log/*.log {
+    weekly
+    missingok
+    notifempty
+    copytruncate
+    compress
+    rotate 30
+}
