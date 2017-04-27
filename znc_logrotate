@@ -1,4 +1,4 @@
-# Place inside /etc/logrotated.d/znc
+# Place inside /etc/logrotate.d/znc
 /home/znc-admin/.znc/moddata/log/*.log {
     daily
     missingok
