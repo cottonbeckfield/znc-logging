@@ -1,6 +1,6 @@
 # znc-logging
 
-## File: znc_log_cron
+## File: znc_cron_log
 * Install with crontab -e as your znc user (or root, doesn't matter). This script will remove files older than 30 days (based on modify time) and also automatically gzip files older than 7 days. This is set to run at 23:00 (11:00PM) every day.
 
 ## File: znc_logrotate
